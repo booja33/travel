@@ -1,0 +1,286 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    margin-left: 10rem;
+}
+
+/* Logo styling */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+    margin-right: 10px;
+}
+
+/* Navigation links styling */
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: #555;
+    color: white;
+    border-radius: 5px;
+}
+
+.navbar ul li .button {
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 50px;
+    margin: 20px 0;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 20px;
+}
+
+.icon div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    color: #333;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.icon div:hover {
+    text-decoration: underline;
+    color: #4CAF50;
+}
+
+.icon .active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Search bar styling */
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px auto;
+}
+
+.search-input {
+    padding: 10px 15px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.search-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.search-button:hover {
+    background-color: #45a049;
+}
+
+/* Banner styling */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.background-image {
+    width: auto;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    border-radius: 20px;
+}
+
+
+
+.text h1 {
+    font-size: 2.5rem;
+   
+    bottom: 8px;
+    color: black;
+}
+
+
+.text p {
+    font-size: 1.2rem;
+   margin: 0;
+    color: black;
+    
+}
+
+.text button {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.text button:hover {
+    background-color: lightgray;
+}
+
+.banner1 {
+    padding: 10px;
+    margin-left: 10rem;
+}
+.card {
+    padding: 10px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.card img{
+    border-radius: 20px;
+}
+
+.banner2 {
+    padding: 10px;
+    margin-left: 10rem;
+}
+
+.cards img{
+    border-radius: 20px;
+}
+
+.cards {
+    padding: 10px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.tour-section {
+    padding: 10px;
+    margin-left: 10rem;
+}
+
+.cardd{
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+   
+
+}
+
+.cardd img{
+    border-radius: 20px;
+}
+.tours-sec{
+    padding: 10px;
+    margin-left: 10rem;
+    background-color: beige;
+}
+
+.cart img{
+    border-radius: 20px;
+    width: 80%;
+    height: 80%;
+}
+.cart{
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 1200px) {
+    .navbar ul {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .logo {
+        font-size: 20px;
+    }
+    .icon {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 30px;
+    }
+    .icon {
+        gap: 10px;
+        padding: 5px 10px;
+    }
+    .search-input {
+        width: 250px;
+    }
+}
